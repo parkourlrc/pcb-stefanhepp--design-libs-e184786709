@@ -1,7 +1,7 @@
 (footprint "Heatsink_Aavid_TO-220_H12.7mm"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "HS1"
 		(at 0 -3.048 0)
@@ -25,18 +25,6 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "2d81f9c5-f2f1-445f-b945-d7bb7136d32c")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -46,6 +34,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -58,6 +47,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -104,7 +94,7 @@
 	)
 	(fp_line
 		(start -3.048 -2.286)
-		(end -1 -2.286)
+		(end 3.048 -2.286)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -123,7 +113,7 @@
 		(uuid "a20ca74a-0181-437f-830e-9b613a5f4bae")
 	)
 	(fp_line
-		(start -1.7 -1.27)
+		(start -1.5 -1.27)
 		(end -6.604 -1.27)
 		(stroke
 			(width 0.12)
@@ -141,16 +131,6 @@
 		)
 		(layer "F.SilkS")
 		(uuid "d1c466f7-cd24-4c72-a450-3ec115071083")
-	)
-	(fp_line
-		(start 3.048 -2.286)
-		(end 1.017015 -2.287308)
-		(stroke
-			(width 0.12)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "86e6690f-5fc2-4ce7-b4b4-9401fee72da4")
 	)
 	(fp_line
 		(start 3.048 -2.286)
@@ -184,7 +164,7 @@
 	)
 	(fp_line
 		(start 6.604 -1.27)
-		(end 1.7 -1.269522)
+		(end 1.5 -1.269522)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -203,7 +183,7 @@
 		(uuid "255ad1f9-8360-4ee1-909b-f065207bfecb")
 	)
 	(pad "1" thru_hole circle
-		(at 0.0127 -0.8763)
+		(at 0 -0.5)
 		(size 3 3)
 		(drill 1.6)
 		(layers "*.Cu" "*.Mask")
@@ -212,4 +192,5 @@
 		(zone_connect 1)
 		(uuid "06d40ebe-1ad3-4fd1-9484-c6d91fce319a")
 	)
+	(embedded_fonts no)
 )
